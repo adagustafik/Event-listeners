@@ -4,6 +4,6 @@ $('#first').click(() => {
 $('#second').click(() => {
     $('#first').text('TEXT CHANGE');
 });
-$('#third').click(() => {
+$('#third').one('click',() => {
     $('button').css('background-color', $('input:text').val());
 });
